@@ -84,7 +84,7 @@ PrintPara = (
 #MainLoop
 while(True):
 #print para
-    print("\n\n\nprint this paragraph\n")
+    print("\n\n\ntype this paragraph\n")
     #GetPara = random.randint(0,(len(Para)-1))
     GetPara = 3;
     print(PrintPara[GetPara],"\n")
