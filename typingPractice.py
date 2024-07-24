@@ -1,5 +1,5 @@
 import os,random;
-
+from tkinter import Tk,Label;
 
 print("\n"+"\033[94m"+"TYPING PRACTICE".center(os.get_terminal_size().columns)+"\033[00m")
 
@@ -80,6 +80,52 @@ PrintPara = (
 
 )
 
+#-----------------------
+#tkinter start
+#-----------------------
+#tkinter status window
+root = Tk();
+root.title = "typing Status";
+root.configure(bg="#2c3e50");
+
+#labels
+correct_label    = Label(root,text=" Correct         ",font="monospace 20",fg="#2ecc71",bg="#2c3e50");
+wrong_label      = Label(root,text=" Wrong           ",font="monospace 20",fg="#e74c3c",bg="#2c3e50");
+incomplete_label = Label(root,text=" Incomplete Type ",font="monospace 20",fg="#3498db",bg="#2c3e50");
+stat_label       = Label(root,text=" Status          ",font="monospace 20",fg="#ecf0f1",bg="#2c3e50");
+
+#grid a labels
+correct_label.grid(row="0",column="0");
+wrong_label.grid(row="1",column="0");
+incomplete_label.grid(row="2",column="0");
+stat_label.grid(row="3",column="0");
+
+#value labels
+correct_value    = Label(root,text="0 ",font="monospace 20 bold",fg="#2ecc71",bg="#2c3e50");
+wrong_value      = Label(root,text="0 ",font="monospace 20 bold",fg="#e74c3c",bg="#2c3e50");
+incomplete_value = Label(root,text="0 ",font="monospace 20 bold",fg="#3498db",bg="#2c3e50");
+stat_value       = Label(root,text="↔ ",font="monospace 25 bold",fg="#ecf0f1",bg="#2c3e50");
+
+#grid a labels
+correct_value.grid(row="0",column="1");
+wrong_value.grid(row="1",column="1");
+incomplete_value.grid(row="2",column="1");
+stat_value.grid(row="3",column="1");
+
+#value change function
+def editLabel(label,value):
+    label.config(text=value);
+
+def changeStat(value,color):
+    stat_value.config(text=value,fg=color);
+#-----------------------
+#tkinter end
+#-----------------------
+
+#status variables
+correctCount        = 0;
+incorrectCount      = 0;
+incompleteTypeCount = 0;
 
 #MainLoop
 while(True):
@@ -88,7 +134,6 @@ while(True):
     #GetPara = random.randint(0,(len(Para)-1))
     GetPara = 3;
     print(PrintPara[GetPara],"\n")
-
 
     #input
     typeData = []
@@ -123,13 +168,10 @@ while(True):
                 if(LineCount[GetPara][1] > len(typeData[i])):
                     print("line",i+1,"are not fully typed :|")
                     noAnotherError = False
-
-                
                 elif(LineCount[GetPara][1] < len(typeData[i])):
                     print("line",i+1,"extra typed :|")
                     length = LineCount[GetPara][1]
                     noAnotherError = False
-                
                 for j in range(length):
                     if(Para[GetPara][i][j] != typeData[i][j]):
                         wrongCount+=1
@@ -137,21 +179,38 @@ while(True):
                         
             except IndexError:
                 print("line",i+1,"not typed :|")
-
+                noAnotherError = False
+                
+        #update incomple type status
+        if(noAnotherError == False):
+            incompleteTypeCount += 1
+            editLabel(incomplete_value,incompleteTypeCount)
+            changeStat("↘ ","#e74c3c")
 
         #score session
         print("\n")
         if(wrongCount == 0 and noAnotherError):
             print("\033[32m"+Correct[random.randint(0,len(Correct)-1)].upper()+"\033[00m")
-        
-        else:
+            correctCount += 1;
+            #tkinter
+            editLabel(correct_value,correctCount);
+            changeStat("↗ ","#2ecc71");
+            
+        elif(wrongCount > 0):
             pointer = 0;
-            if(wrongCount < 4 ):
+            if(wrongCount < 4 and wrongCount != 0):
                 print("\033[31m"+Wrong[wrongCount-1].upper()+"\033[00m")
+                print("wrong count = ",wrongCount,"\n")
             else:
                 print("\033[31m"+Wrong[3].upper()+"\033[00m")
+                print("wrong count = ",wrongCount,"\n")
 
-            print("wrong count = ",wrongCount,"\n")
+            incorrectCount += 1;
+            #tkinter
+            editLabel(wrong_value,incorrectCount);
+            changeStat("↘ ","#e74c3c");
+            
+            #print para
             for i in range(len(typeData)):
                 for j in range(len(typeData[i])):
                     if(pointer < len(wronglyTypedWordsIndex) and wronglyTypedWordsIndex[pointer][0] == i and wronglyTypedWordsIndex[pointer][1] == j):
@@ -160,12 +219,16 @@ while(True):
                     else:
                         print(typeData[i][j],end=" ")
                 print("")
-
-
+        
+        elif(noAnotherError == False):
+            incorrectCount += 1
+            editLabel(wrong_value,incorrectCount)
 
     #loop end condition
     temp2 = input("\n\nyou will continue? (press enter to continue) ")
     if(temp2 == ""):
         continue
     else:
+        root.destroy()
         break
+root.mainloop();
