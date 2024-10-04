@@ -8,15 +8,6 @@ Correct = ('good','nice','execellent','high quality','Geate','Groovy','Sweet')
 Wrong = ('better','lousy','unexpected','unacceptable')
 
 Para = (
-('ask', 'fad', 'alas', 'asks', 'shad', 'lads', 'flags', 'flask', 'glass', 'jag', 'fag', 'fall', 'hash', 'glad', 'sags', 'galls', 'halls', 'salad', 'jak', 'has', 'jags', 'gaff', 'hall', 'dash', 'flask', 'slash', 'flasks', 'lad', 'sad', 'lash', 'adds', 'gall', 'gash', 'shall', 'lakhs', 'dhalls'),
-    
-('lad', 'sad', 'lash', 'adds', 'gall', 'gash', 'shall', 'lakhs', 'dhalls', 'jak', 'has', 'jags', 'gaff', 'hall', 'dash', 'flask', 'slash', 'flasks', 'jag', 'fag', 'fall', 'hash', 'glad', 'sags', 'galls', 'halls', 'salad', 'ask', 'fad', 'alas', 'asks', 'shad', 'lads', 'flags', 'flask', 'glass'),
-
-    ('awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;', 'awerqfa', ';oiupj;'),
-
-)
-
-Para = (
     (
         ('ask', 'fad', 'alas', 'asks', 'shad', 'lads', 'flags', 'flask', 'glass'), 
         ('jag', 'fag', 'fall', 'hash', 'glad', 'sags', 'galls', 'halls', 'salad'), 
@@ -46,6 +37,13 @@ Para = (
         ('fails', 'usual', 'liked', 'walks', 'peaks', 'orders', 'follow', 'drawls', 'defiles')
     ),
     (
+        ('gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj'),
+        ('gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj'),
+        ('gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj'),
+        ('gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj'),
+        ('gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj', 'gftfrf', 'hjyjuj')
+    ),
+    (
         ('lawyers', 'streaks', 'shipped', 'hillside', 'herewith', 'proposals'),
         ('shekels', 'forward', 'desired', 'loophole', 'jugglers', 'strapples'),
         ('hatless', 'figures', 'prepare', 'feathery', 'freehold', 'struggles'),
@@ -56,7 +54,14 @@ Para = (
         ('laughed', 'kettles', 'whiskers', 'thorough', 'repeated', 'flashlight'),
         ('petrols', 'regular', 'equipped', 'lilliput', 'etiquette', 'powerfully'),
         ('without', 'waggish', 'laughter', 'kirkwall', 'yesterday', 'typewriter')
-     )
+     ),
+    (
+        ('azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj'),
+        ('azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj'),
+        ('azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj'),
+        ('azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj'),
+        ('azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj')
+    )
 )
 
 LineCount = (
@@ -64,7 +69,9 @@ LineCount = (
     ( 4 , 9 ),
     ( 5 , 8 ),
     ( 7 , 9 ),
-    ( 10 , 6 )
+    ( 5 , 8 ),
+    ( 10 , 6 ),
+    ( 5 , 8 )
 )
 
 PrintPara = (
@@ -76,7 +83,11 @@ PrintPara = (
 
     'fish kodak ahead larks quail apples reader flukes fiddle\ndead rails sales agile isles should liquid shower saddle\nidols jaded sails filed legal folder sledge squall larger\ngrade jails lakes roses rupee squeal fields lulled dislike\napple dirks lease equip skill easels dollar poorer require\nasked forks hedge would grass jokers jailer equals refresh\nfails usual liked walks peaks orders follow drawls defiles',
 
-    'lawyers streaks shipped hillside herewith proposals\nshekels forward desired loophole jugglers strapples\nhatless figures prepare feathery freehold struggles\nthought thyself treated assessed prepared territory\nquarter yodlers youthful although supplies guileless\nfreight further plougher shippers slightly telegraph\ndutiful pleased goodwill tortuous property addressed\nlaughed kettles whiskers thorough repeated flashlight\npetrols regular equipped lilliput etiquette powerfully\nwithout waggish laughter kirkwall yesterday typewriter'
+    'gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj\ngftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj\ngftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj\ngftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj\ngftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj',
+    
+    'lawyers streaks shipped hillside herewith proposals\nshekels forward desired loophole jugglers strapples\nhatless figures prepare feathery freehold struggles\nthought thyself treated assessed prepared territory\nquarter yodlers youthful although supplies guileless\nfreight further plougher shippers slightly telegraph\ndutiful pleased goodwill tortuous property addressed\nlaughed kettles whiskers thorough repeated flashlight\npetrols regular equipped lilliput etiquette powerfully\nwithout waggish laughter kirkwall yesterday typewriter',
+
+    'azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj'
 
 )
 
@@ -131,8 +142,8 @@ incompleteTypeCount = 0;
 while(True):
 #print para
     print("\n\n\ntype this paragraph\n")
-    #GetPara = random.randint(0,(len(Para)-1))
-    GetPara = 3;
+    #GetPara = random.randint(0,(len(Para)-1)) 
+    GetPara = 6;
     print(PrintPara[GetPara],"\n")
 
     #input
@@ -232,3 +243,4 @@ while(True):
         root.destroy()
         break
 root.mainloop();
+
