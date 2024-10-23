@@ -61,6 +61,18 @@ Para = (
         ('azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj'),
         ('azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj'),
         ('azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj', 'azxcvf', 'lkmnbj')
+    ),
+    (
+        ('amazed', 'journal', 'gambols', 'pickling', 'vineyard', 'grizzled'),
+        ('except', 'jackets', 'fixture', 'austrian', 'appeared', 'frequent'),
+        ('logical', 'student', 'spacing', 'movement', 'joyfully', 'premises'),
+        ('sixfold', 'succeed', 'western', 'examined', 'accuracy', 'fortress'),
+        ('daybook', 'lecture', 'neither', 'vexation', 'quantity', 'executor'),
+        ('kindled', 'general', 'private', 'practice', 'question', 'deduction'),
+        ('jingled', 'amulets', 'service', 'produces', 'requires', 'judicious'),
+        ('jumbled', 'arrival', 'relative', 'provoked', 'starting', 'materials'),
+        ('swivels', 'fizzed', 'possible', 'somewhat', 'cylinder', 'assessment'),
+        ('violets', 'regaled', 'becoming', 'gracious', 'thousand', 'appearance')
     )
 )
 
@@ -71,7 +83,8 @@ LineCount = (
     ( 7 , 9 ),
     ( 5 , 8 ),
     ( 10 , 6 ),
-    ( 5 , 8 )
+    ( 5 , 8 ),
+    ( 10 , 6 )
 )
 
 PrintPara = (
@@ -87,7 +100,9 @@ PrintPara = (
     
     'lawyers streaks shipped hillside herewith proposals\nshekels forward desired loophole jugglers strapples\nhatless figures prepare feathery freehold struggles\nthought thyself treated assessed prepared territory\nquarter yodlers youthful although supplies guileless\nfreight further plougher shippers slightly telegraph\ndutiful pleased goodwill tortuous property addressed\nlaughed kettles whiskers thorough repeated flashlight\npetrols regular equipped lilliput etiquette powerfully\nwithout waggish laughter kirkwall yesterday typewriter',
 
-    'azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj'
+    'azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj',
+
+    'amazed journal gambols pickling vineyard grizzled\nexcept jackets fixture austrian appeared frequent\nlogical student spacing movement joyfully premises\nsixfold succeed western examined accuracy fortress\ndaybook lecture neither vexation quantity executor\nkindled general private practice question deduction\njingled amulets service produces requires judicious\njumbled arrival relative provoked starting materials\nswivels fizzed possible somewhat cylinder assessment\nviolets regaled becoming gracious thousand appearance'
 
 )
 
@@ -143,7 +158,7 @@ while(True):
 #print para
     print("\n\n\ntype this paragraph\n")
     #GetPara = random.randint(0,(len(Para)-1)) 
-    GetPara = 6;
+    GetPara = 7;
     print(PrintPara[GetPara],"\n")
 
     #input
@@ -240,7 +255,7 @@ while(True):
     if(temp2 == ""):
         continue
     else:
-        root.destroy()
+        root.destroy();
         break
 root.mainloop();
 
