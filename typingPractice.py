@@ -146,8 +146,7 @@ incompleteTypeCount = 0;
 while(True):
     #print para
     print("\n\n\ntype this paragraph\n")
-    #GetPara = random.randint(0,(len(Para)-1)) 
-    GetPara = 7;
+    GetPara = random.randint(0,(len(Para)-1))
     print(PrintPara[GetPara],"\n")
 
     #input
