@@ -76,34 +76,23 @@ Para = (
     )
 )
 
-LineCount = (
-    ( 4 , 9 ),
-    ( 4 , 9 ),
-    ( 5 , 8 ),
-    ( 7 , 9 ),
-    ( 5 , 8 ),
-    ( 10 , 6 ),
-    ( 5 , 8 ),
-    ( 10 , 6 )
-)
-
 PrintPara = (
     "ask fad alas asks shad lads flags flask glass\njag fag fall hash glad sags galls halls salad\njak has jags gaff hall dash flask slash flasks\nlad sad lash adds gall gash shall lakhs dhalls",
 
     "lad sad lash adds gall gash shall lakhs dhalls\njak has jags gaff hall dash flask slash flasks\njag fag fall hash glad sags galls halls salad\nask fad alas asks shad lads flags flask glass",
 
     "awerqfa ;oiupj; awerqfa ;oiupj; awerqfa ;oiupj; awerqfa ;oiupj;\nawerqfa ;oiupj; awerqfa ;oiupj; awerqfa ;oiupj; awerqfa ;oiupj;\nawerqfa ;oiupj; awerqfa ;oiupj; awerqfa ;oiupj; awerqfa ;oiupj;\nawerqfa ;oiupj; awerqfa ;oiupj; awerqfa ;oiupj; awerqfa ;oiupj;\nawerqfa ;oiupj; awerqfa ;oiupj; awerqfa ;oiupj; awerqfa ;oiupj;",
-
-    'fish kodak ahead larks quail apples reader flukes fiddle\ndead rails sales agile isles should liquid shower saddle\nidols jaded sails filed legal folder sledge squall larger\ngrade jails lakes roses rupee squeal fields lulled dislike\napple dirks lease equip skill easels dollar poorer require\nasked forks hedge would grass jokers jailer equals refresh\nfails usual liked walks peaks orders follow drawls defiles',
+    
+    'fish  kodak ahead larks quail apples reader flukes fiddle  \ndead  rails sales agile isles should liquid shower saddle  \nidols jaded sails filed legal folder sledge squall larger  \ngrade jails lakes roses rupee squeal fields lulled dislike \napple dirks lease equip skill easels dollar poorer require \nasked forks hedge would grass jokers jailer equals refresh \nfails usual liked walks peaks orders follow drawls defiles',
 
     'gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj\ngftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj\ngftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj\ngftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj\ngftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj gftfrf hjyjuj',
     
-    'lawyers streaks shipped hillside herewith proposals\nshekels forward desired loophole jugglers strapples\nhatless figures prepare feathery freehold struggles\nthought thyself treated assessed prepared territory\nquarter yodlers youthful although supplies guileless\nfreight further plougher shippers slightly telegraph\ndutiful pleased goodwill tortuous property addressed\nlaughed kettles whiskers thorough repeated flashlight\npetrols regular equipped lilliput etiquette powerfully\nwithout waggish laughter kirkwall yesterday typewriter',
+    'lawyers streaks shipped  hillside herewith  proposals  \nshekels forward desired  loophole jugglers  strapples  \nhatless figures prepare  feathery freehold  struggles  \nthought thyself treated  assessed prepared  territory  \nquarter yodlers youthful although supplies  guileless  \nfreight further plougher shippers slightly  telegraph  \ndutiful pleased goodwill tortuous property  addressed  \nlaughed kettles whiskers thorough repeated  flashlight \npetrols regular equipped lilliput etiquette powerfully \nwithout waggish laughter kirkwall yesterday typewriter',
 
     'azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj',
 
-    'amazed journal gambols pickling vineyard grizzled\nexcept jackets fixture austrian appeared frequent\nlogical student spacing movement joyfully premises\nsixfold succeed western examined accuracy fortress\ndaybook lecture neither vexation quantity executor\nkindled general private practice question deduction\njingled amulets service produces requires judicious\njumbled arrival relative provoked starting materials\nswivels fizzed possible somewhat cylinder assessment\nviolets regaled becoming gracious thousand appearance'
-
+    'amazed  journal gambols  pickling vineyard grizzled   \nexcept  jackets fixture  austrian appeared frequent   \nlogical student spacing  movement joyfully premises   \nsixfold succeed western  examined accuracy fortress   \ndaybook lecture neither  vexation quantity executor   \nkindled general private  practice question deduction  \njingled amulets service  produces requires judicious  \njumbled arrival relative provoked starting materials  \nswivels fizzed  possible somewhat cylinder assessment \nviolets regaled becoming gracious thousand appearance'
+    
 )
 
 #-----------------------
@@ -155,7 +144,7 @@ incompleteTypeCount = 0;
 
 #MainLoop
 while(True):
-#print para
+    #print para
     print("\n\n\ntype this paragraph\n")
     #GetPara = random.randint(0,(len(Para)-1)) 
     GetPara = 7;
@@ -163,8 +152,7 @@ while(True):
 
     #input
     typeData = []
-    j = LineCount[GetPara][0]
-    k = 0
+    j = len(Para[GetPara])
 
     while(j != 0):
         temp = input()
@@ -172,12 +160,8 @@ while(True):
             break
         
         SplitString = temp.strip().split(" ")
-        typeData.append(list())
-        for i in range(len(SplitString)):
-            typeData[k].append(SplitString[i])
-        k += 1
+        typeData.append(SplitString);
         j -= 1
-
 
     #validation
     if(not typeData):
@@ -188,15 +172,15 @@ while(True):
         noAnotherError = True
         wrongCount = 0
         print(" ")
-        for i in range(LineCount[GetPara][0]):
+        for i in range(len(Para[GetPara])):
             try:
                 length = len(typeData[i])
-                if(LineCount[GetPara][1] > len(typeData[i])):
-                    print("line",i+1,"are not fully typed :|")
+                if(len(Para[GetPara][i]) > len(typeData[i])):
+                    print("\033[33mline",i+1,"are not fully typed :|\033[00m")
                     noAnotherError = False
-                elif(LineCount[GetPara][1] < len(typeData[i])):
-                    print("line",i+1,"extra typed :|")
-                    length = LineCount[GetPara][1]
+                elif(len(Para[GetPara][i]) < len(typeData[i])):
+                    print("\033[33mline",i+1,"extra typed :|\033[00m")
+                    length = len(Para[GetPara][i])
                     noAnotherError = False
                 for j in range(length):
                     if(Para[GetPara][i][j] != typeData[i][j]):
@@ -204,7 +188,7 @@ while(True):
                         wronglyTypedWordsIndex.append([i,j]);
                         
             except IndexError:
-                print("line",i+1,"not typed :|")
+                print("\033[33mline",i+1,"not typed :|\033[00m")
                 noAnotherError = False
                 
         #update incomple type status
@@ -226,11 +210,10 @@ while(True):
             pointer = 0;
             if(wrongCount < 4 and wrongCount != 0):
                 print("\033[31m"+Wrong[wrongCount-1].upper()+"\033[00m")
-                print("wrong count = ",wrongCount,"\n")
             else:
                 print("\033[31m"+Wrong[3].upper()+"\033[00m")
-                print("wrong count = ",wrongCount,"\n")
 
+            print("wrong count = ",wrongCount,"\n")
             incorrectCount += 1;
             #tkinter
             editLabel(wrong_value,incorrectCount);
@@ -240,7 +223,7 @@ while(True):
             for i in range(len(typeData)):
                 for j in range(len(typeData[i])):
                     if(pointer < len(wronglyTypedWordsIndex) and wronglyTypedWordsIndex[pointer][0] == i and wronglyTypedWordsIndex[pointer][1] == j):
-                        print("\033[31m"+typeData[i][j]+"\033[00m", end=" ")
+                        print("\033[2m\033[31m"+typeData[i][j]+"\033[00m", end=" ")
                         pointer += 1;
                     else:
                         print(typeData[i][j],end=" ")
