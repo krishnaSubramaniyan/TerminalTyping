@@ -52,9 +52,7 @@ cd TerminalTyping
 python3 terminalType.py
 ```
 ## Example-video
-<video controls autoplay>
-    <source src="https://github.com/github-CS-krishna/TerminalTyping/example/video/demo.mp4" type="video/mp4" />
-</video>
+(https://drive.google.com/file/d/1W_13W0Qr0tpY7n0f5Z2aghsY6ySMtnOF/view?usp=sharing)
 
 ## Customization
 To customize the paragraph selection, simply edit the `GetPara` variable.
@@ -66,7 +64,6 @@ Example:
 ```
 GetPara = 0
 ```
-<br/>
 __set random paragaph__
 
 Randomly select a paragraph.  
