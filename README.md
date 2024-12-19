@@ -52,7 +52,9 @@ cd TerminalTyping
 python3 terminalType.py
 ```
 ## Example-video
-(https://github-cs-krishna.github.io/TerminalTyping/)
+https://github.com/user-attachments/assets/26e79f05-a01c-418e-809a-d7af31707a0f
+
+
 
 ## Customization
 To customize the paragraph selection, simply edit the `GetPara` variable.
