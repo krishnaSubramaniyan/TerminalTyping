@@ -12,7 +12,7 @@ A simple terminal-based typing practice.
 + [Example-video](#example-video)
 + [Customization](#customization)
 + [.bashrc Alias](#bashrc-alias)
-+ [Licence](#licence)
++ [License](#license)
 
 ## Introduction
 Terminal Typing is a simple Python-based application.
@@ -90,5 +90,5 @@ GetPara = random.randint(0,(len(PrintPara)-1))
    ```
 This command will add an alias to your `.bashrc` file
 
-## Licence
+## License
 this project is **open-source** and uses the GPL v3 license, supporting open-source development.
