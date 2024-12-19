@@ -1,7 +1,7 @@
-import os,random;
 from tkinter import Tk,Label;
+import os,random;
 
-print("\n"+"\033[94m"+"TYPING PRACTICE".center(os.get_terminal_size().columns)+"\033[00m")
+print("\n"+"\033[94m"+"TERMINAL TYPE".center(os.get_terminal_size().columns)+"\033[00m")
 
 #data
 Correct = ('good','nice','execellent','high quality','Geate','Groovy','Sweet')
@@ -73,7 +73,48 @@ Para = (
         ('jumbled', 'arrival', 'relative', 'provoked', 'starting', 'materials'),
         ('swivels', 'fizzed', 'possible', 'somewhat', 'cylinder', 'assessment'),
         ('violets', 'regaled', 'becoming', 'gracious', 'thousand', 'appearance')
-    )
+    ),
+    (
+        ('abcdefghijklmnopqrstuvwxyz.,', 'zyxwvutsrqponmlkjihgfedcba.,'),
+        ('abcdefghijklmnopqrstuvwxyz.,', 'zyxwvutsrqponmlkjihgfedcba.,'),
+        ('abcdefghijklmnopqrstuvwxyz.,', 'zyxwvutsrqponmlkjihgfedcba.,'),
+        ('abcdefghijklmnopqrstuvwxyz.,', 'zyxwvutsrqponmlkjihgfedcba.,'),
+        ('abcdefghijklmnopqrstuvwxyz.,', 'zyxwvutsrqponmlkjihgfedcba.,')
+     ),
+    (
+        ('points', 'children', 'clockwork', 'remittance', 'punctuation', 'constitution'),
+        ('common', 'frequent', 'requisite', 'attractive', 'distinction', 'arrangements'),
+        ('sinful', 'ambition', 'novelties', 'yardsticks', 'environment', 'approximately'),
+        ('summer', 'umbrella', 'answering', 'foundation', 'explanation', 'distinguished'),
+        ('behalf', 'armature', 'regarding', 'guaranteed', 'association', 'ornamentation'),
+        ('exhibit', 'relieved', 'exceeding', 'sufference', 'competition', 'peculiarities'),
+        ('thunder', 'citizens', 'abundance', 'atmosphere', 'transmitted', 'specification'),
+        ('maximum', 'commonly', 'apparatus', 'partition', 'questionless', 'investigations'),
+        ('adopting', 'pamphlets', 'accompany', 'communicate', 'installation', 'circumstances')    ),
+    (
+        ('123454', '098767', '123454', '098767', '123454', '098767', '123454', '098767'),
+        ('123454', '098767', '123454', '098767', '123454', '098767', '123454', '098767'),
+        ('123454', '098767', '123454', '098767', '123454', '098767', '123454', '098767'),
+        ('123454', '098767', '123454', '098767', '123454', '098767', '123454', '098767'),
+        ('123454', '098767', '123454', '098767', '123454', '098767', '123454', '098767')
+    ),
+    (
+        ('876', '1973', '1847', '23,846', '10,746', '1,37,946'),
+        ('424', '5567', '8563', '11,200', '11,140', '7,13,345'),
+        ('537', '2136', '2746', '23,476', '23,450', '14,06,786'),
+        ('948', '4520', '7361', '15,409', '27,763', '18,76,432'),
+        ('473', '6286', '3950', '78,796', '86,521', '20,54,362'),
+        ('572', '9567', '9250', '33,489', '95,362', '31,98,453')
+    ),
+    (
+        ('July', 'Canada', 'Gandhiji', 'Minister', 'Registered'),
+        ('Sita', 'Kerala', 'Varghese', 'Delivery', 'Swamimalai'),
+        ('Leela', 'Bezwada', 'Strictly', 'Tamilnadu', 'Department'),
+        ('March', 'Janatha', 'Govindan', 'Secretary', 'Concurrence'),
+        ('Raman', 'Express', 'Exercise', 'Conferred', 'Notification'),
+        ('Guntur', 'Prakash', 'Schedule', 'Government', 'Confidential'),
+        ('Kannan', 'October', 'Calcutta', 'Kumbakonam', 'Superintendent')
+     )    
 )
 
 PrintPara = (
@@ -91,8 +132,18 @@ PrintPara = (
 
     'azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj\nazxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj azxcvf lkmnbj',
 
-    'amazed  journal gambols  pickling vineyard grizzled   \nexcept  jackets fixture  austrian appeared frequent   \nlogical student spacing  movement joyfully premises   \nsixfold succeed western  examined accuracy fortress   \ndaybook lecture neither  vexation quantity executor   \nkindled general private  practice question deduction  \njingled amulets service  produces requires judicious  \njumbled arrival relative provoked starting materials  \nswivels fizzed  possible somewhat cylinder assessment \nviolets regaled becoming gracious thousand appearance'
-    
+    'amazed  journal gambols  pickling vineyard grizzled   \nexcept  jackets fixture  austrian appeared frequent   \nlogical student spacing  movement joyfully premises   \nsixfold succeed western  examined accuracy fortress   \ndaybook lecture neither  vexation quantity executor   \nkindled general private  practice question deduction  \njingled amulets service  produces requires judicious  \njumbled arrival relative provoked starting materials  \nswivels fizzed  possible somewhat cylinder assessment \nviolets regaled becoming gracious thousand appearance',
+
+    'abcdefghijklmnopqrstuvwxyz., zyxwvutsrqponmlkjihgfedcba., \nabcdefghijklmnopqrstuvwxyz., zyxwvutsrqponmlkjihgfedcba., \nabcdefghijklmnopqrstuvwxyz., zyxwvutsrqponmlkjihgfedcba., \nabcdefghijklmnopqrstuvwxyz., zyxwvutsrqponmlkjihgfedcba., \nabcdefghijklmnopqrstuvwxyz., zyxwvutsrqponmlkjihgfedcba.,',
+
+    'points   children  clockwork remittance  punctuation  constitution   \ncommon   frequent  requisite attractive  distinction  arrangements   \nsinful   ambition  novelties yardsticks  environment  approximately  \nsummer   umbrella  answering foundation  explanation  distinguished  \nbehalf   armature  regarding guaranteed  association  ornamentation  \nexhibit  relieved  exceeding sufference  competition  peculiarities  \nthunder  citizens  abundance atmosphere  transmitted  specification  \nmaximum  commonly  apparatus partition   questionless investigations \nadopting pamphlets accompany communicate installation circumstances ',
+
+    '123454 098767 123454 098767 123454 098767 123454 098767 \n123454 098767 123454 098767 123454 098767 123454 098767 \n123454 098767 123454 098767 123454 098767 123454 098767 \n123454 098767 123454 098767 123454 098767 123454 098767 \n123454 098767 123454 098767 123454 098767 123454 098767',
+
+    '876 1973 1847 23,846 10,746 1,37,946  \n424 5567 8563 11,200 11,140 7,13,345  \n537 2136 2746 23,476 23,450 14,06,786 \n948 4520 7361 15,409 27,763 18,76,432 \n473 6286 3950 78,796 86,521 20,54,362 \n572 9567 9250 33,489 95,362 31,98,453',
+
+    'July   Canada  Gandhiji Minister   Registered     \nSita   Kerala  Varghese Delivery   Swamimalai     \nLeela  Bezwada Strictly Tamilnadu  Department     \nMarch  Janatha Govindan Secretary  Concurrence    \nRaman  Express Exercise Conferred  Notification   \nGuntur Prakash Schedule Government Confidential   \nKannan October Calcutta Kumbakonam Superintendent'
+
 )
 
 #-----------------------
@@ -142,17 +193,19 @@ correctCount        = 0;
 incorrectCount      = 0;
 incompleteTypeCount = 0;
 
+
 #MainLoop
 while(True):
     #print para
     print("\n\n\ntype this paragraph\n")
-    GetPara = random.randint(0,(len(Para)-1))
+    #GetPara = random.randint(0,(len(Para)-1)) 
+    GetPara = 8;
     print(PrintPara[GetPara],"\n")
 
     #input
     typeData = []
     j = len(Para[GetPara])
-
+        
     while(j != 0):
         temp = input()
         if(temp == ""):
