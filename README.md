@@ -11,7 +11,7 @@ A simple terminal-based typing practice.
     - [installation](#installation)
 + [Example-video](#example-video)
 + [Customization](#customization)
-+ [.bashrc Alias](#bashrc-alias)
++ [set bash alias](#set-bash-alias)
 + [License](#license)
 
 ## Introduction
@@ -47,7 +47,7 @@ sudo apt install python3-tk
 ```
 **Copy repository**
 ```
-git clone https://github.com/github-CS-krishna/TerminalTyping
+git clone https://github.com/krishnaSubramaniyan/TerminalTyping
 cd TerminalTyping
 python3 terminalType.py
 ```
@@ -73,7 +73,7 @@ Example:
 ```
 GetPara = random.randint(0,(len(PrintPara)-1))
 ```
-## bashrc-alias
+## set-bash-alias
 
 1. First, open the terminal.
 
@@ -86,7 +86,7 @@ GetPara = random.randint(0,(len(PrintPara)-1))
 
 3. After that, run the following command.  
    ```
-   echo -e "\n#set terminalTyping alias\nalias terminalType='python3 $(pwd)/terminalType.py'" | tee -a ~/.bashrc && bash
+   echo -e "\n#set terminalTyping alias\nalias terminalType='python3 $(pwd)/terminalType.py'" | tee -a ~/.bashrc && source ~/.bashrc
    ```
 This command will add an alias to your `.bashrc` file
 
